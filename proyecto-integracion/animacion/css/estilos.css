@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*background position define desde qué lugar se posiciona la*/
+#fondo1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/background4.jpg);
+  animation: mianimacion 24s linear 18s infinite;
+  -webkit-animation: mianimacion 24s linear 18s infinite;
+  -moz-animation: mianimacion 24s linear 18s infinite;
+}
+
+/*background-size: cover; y object-fit cover sirven para ajustar el contenido para que coincida con el contenedor padre*/
+#fondo2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/background2.jpg);
+  background-size: cover;
+  animation: mianimacion 24s linear 12s infinite;
+  -webkit-animation: mianimacion 24s linear 12s infinite;
+  -moz-animation: mianimacion 24s linear 12s infinite;
+}
+
+#fondo3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/background3.jpg);
+  background-size: cover;
+  animation: mianimacion 24s linear 6s infinite;
+  -webkit-animation: mianimacion 24s linear 6s infinite;
+  -moz-animation: mianimacion 24s linear 6s infinite;
+}
+
+/*animation: nombreanimacion tiempo, inidica el tiempo que va a durar la animacion*/
+/* animation: mianimacion tiempo progresoanimacion inicio infinito */
+#fondo4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/background.jpg);
+  animation: mianimacion 24s linear 0s infinite;
+  -webkit-animation: mianimacion 24s linear 0s infinite;
+  -moz-animation: mianimacion 24s linear 0s infinite;
+}
+
+/*Keyframe: el porcentaje indica el progreso de la animación relativamente al tiempo que se asigne*/
+@keyframes mianimacion {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes mianimacion {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes mianimacion {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* @-webkit-keyframes mianimacion {
+    0% {
+        opacity: 1;
+    }
+    25%{
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes mianimacion {
+    0% {
+        opacity: 1;
+    }
+    25%{
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+ */

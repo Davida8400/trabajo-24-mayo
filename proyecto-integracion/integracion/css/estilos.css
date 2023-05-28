@@ -1,0 +1,480 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: sans-serif;
+}
+
+#fondo1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/background4.jpg);
+  animation: mianimacion 24s linear 18s infinite;
+  -webkit-animation: mianimacion 24s linear 18s infinite;
+  -moz-animation: mianimacion 24s linear 18s infinite;
+}
+
+/*background-size: cover; y object-fit cover sirven para ajustar el contenido para que coincida con el contenedor padre*/
+#fondo2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/background2.jpg);
+  background-size: cover;
+  animation: mianimacion 24s linear 12s infinite;
+  -webkit-animation: mianimacion 24s linear 12s infinite;
+  -moz-animation: mianimacion 24s linear 12s infinite;
+}
+
+#fondo3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/background3.jpg);
+  background-size: cover;
+  animation: mianimacion 24s linear 6s infinite;
+  -webkit-animation: mianimacion 24s linear 6s infinite;
+  -moz-animation: mianimacion 24s linear 6s infinite;
+}
+
+/*animation: nombreanimacion tiempo, inidica el tiempo que va a durar la animacion*/
+/* animation: mianimacion tiempo progresoanimacion inicio infinito */
+#fondo4 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/background.jpg);
+  animation: mianimacion 24s linear 0s infinite;
+  -webkit-animation: mianimacion 24s linear 0s infinite;
+  -moz-animation: mianimacion 24s linear 0s infinite;
+}
+
+/*Keyframe: el porcentaje indica el progreso de la animación relativamente al tiempo que se asigne*/
+@keyframes mianimacion {
+  0% {
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes mianimacion {
+  0% {
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes mianimacion {
+  0% {
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+body {
+  background: url(../img/background.jpg);
+  background-repeat: repeat;
+}
+
+/*--Inicio del css--*/
+/*--Header--*/
+
+header {
+  position: relative;
+  margin: auto;
+  width: 1000px;
+  height: 83px;
+  background: url(../img/cabezote.jpg);
+}
+
+
+
+#logo {
+  position: absolute;
+  top: 17px;
+  left: 15px;
+  width: 188px;
+  height: 47px;
+}
+
+
+/*--Fin header--*/
+
+/*--Barra navegación--*/
+
+nav {
+  position: relative;
+  margin: auto;
+  width: 1000px;
+  height: 45px;
+  border-bottom: 1px solid #bcd1cb;
+  background: url(../img/nav.jpg);
+}
+
+nav ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 45px;
+}
+
+nav ul li {
+  float: left;
+  width: 124px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  border-right: 1px solid #bcd1cb;
+}
+
+/*--Fin barra navegación--*/
+
+/*--Slide--*/
+
+#slide {
+  position: relative;
+  margin: auto;
+  width: 1000px;
+  height: 301px;
+}
+
+#slide ul {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 1000px;
+  height: 301px;
+  background: url(../img/slide01.jpg);
+}
+
+#slide ul li img {
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  transition: opacity 1s ease-out;
+}
+
+#slide ul li label {
+  position: relative;
+  z-index: 3;
+  top: 304px;
+  left: 440px;
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin: 0 2px;
+  background: blue;
+  border: 3px solid white;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+#slide ul li label:hover {
+  background: #aaa;
+}
+
+#slide ul li label:active {
+  background: magenta;
+}
+
+#slide ul li input {
+  display: none;
+}
+
+slide ul li input#boton-1:checked~#foto01 {
+  opacity: 1;
+  z-index: 1;
+}
+
+slide ul li input#boton-1:checked~#foto02 {
+  opacity: 1;
+  z-index: 1;
+}
+
+slide ul li input#boton-1:checked~#foto03 {
+  opacity: 1;
+  z-index: 1;
+}
+
+slide ul li input#boton-1:checked~#foto04 {
+  opacity: 1;
+  z-index: 1;
+}
+
+slide ul li input#boton-1:checked~#foto05 {
+  opacity: 1;
+  z-index: 1;
+}
+
+#botoneraSlide {
+  position: relative;
+  margin: auto;
+  width: 1000px;
+  height: 26px;
+  background: url(../img/backBotonesSlide.jpg);
+}
+
+/*--Fin slide--*/
+
+/*--Botonera--*/
+
+#botoneraSlide {
+  position: relative;
+  margin: auto;
+  width: 1000px;
+  height: 26px;
+  background: url(../img/backBotonesSlide.jpg);
+}
+
+#botoneraSlide ul {
+  position: relative;
+  margin: auto;
+  width: 100px;
+  height: 26px;
+}
+
+#botoneraSlide ul li {
+  float: left;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: #232d80;
+  border: 3px solid white;
+  margin: 3px 2px;
+}
+
+/*--Fin botonera--*/
+
+/*--Sección inicio--*/
+
+section#inicio {
+  position: relative;
+  margin: auto;
+  width: 1000px;
+  height: 299px;
+  background: white;
+}
+
+section#inicio ul li {
+  float: left;
+  width: 333px;
+  height: 299px;
+}
+
+section#inicio ul li h1 {
+  margin: 23px 27px;
+  font-weight: 100;
+  font-size: 25px;
+}
+
+section#inicio ul li p {
+  margin: 23px 28px;
+  font-size: 15px;
+}
+
+section#inicio ul li img {
+  margin: 1px 29px;
+  width: 273px;
+  height: 83px;
+  background: silver;
+}
+
+/*--Fin sección inicio*/
+
+/*--Sección quienes somos--*/
+
+section#quienesSomos {
+  position: relative;
+  margin: auto;
+  width: 1000px;
+  height: 299px;
+  background: white;
+}
+
+/*--Fin quienes somos--*/
+
+/*--Sección servicios--*/
+
+section#servicios {
+  position: relative;
+  margin: auto;
+  width: 1000px;
+  height: 299px;
+  background: white;
+}
+
+/*--Fin servicios--*/
+
+/*--Sección servicios--*/
+
+section#contactenos {
+  position: relative;
+  margin: auto;
+  width: 1000px;
+  height: 299px;
+  background: white;
+}
+
+
+/*--Fin contactos--*/
+
+/*--Inicio bottom--*/
+
+#bottom {
+  position: relative;
+  margin: auto;
+  width: 1000px;
+  height: 190px;
+  background: url(../img/backBottom.jpg);
+}
+
+#bottom ul li {
+  float: left;
+  width: 250px;
+  height: 190px;
+}
+
+#bottom ul li h1 {
+  margin: 13px 18px;
+  color: white;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+#bottom ul li ol {
+  position: relative;
+  top: 15px;
+  left: 17px;
+  width: 190px;
+  height: 80px;
+  background: rgbsa(255, 0, 0, .5);
+}
+
+#bottom ul li ol li {
+  height: 20px;
+  text-align: left;
+  list-style: inside;
+  font-size: 15px;
+  color: white;
+  list-style-image: url(../img/list.png);
+}
+
+#bottom ul li img {
+  position: relative;
+  top: 15px;
+  left: 15px;
+  width: 95px;
+  height: 95px;
+  border: 4px solid white;
+  background: url(../img/imgGaleria.jpg);
+  background-size: cover;
+}
+
+#bottom ul li ul {
+  position: relative;
+  top: 11px;
+  left: 15px;
+  width: 200px;
+  height: 40px;
+}
+
+#bottom ul li ul li {
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background: white;
+  margin: 5px;
+}
+
+#bottom ul li ul li:first-child {
+  background: url(../img/facebook.jpg);
+  background-size: cover;
+}
+
+#bottom ul li ul li:nth-child(2) {
+  background: url(../img/iconoGoogle.jpg);
+  background-size: cover;
+}
+
+#bottom ul li ul li:nth-child(3) {
+  background: url(../img/iconoPinterest.jpg);
+  background-size: cover;
+}
+
+#bottom ul li ul li:last-child {
+  background: url(../img/iconoTwitter.jpg);
+  background-size: cover;
+}
+
+#bottom ul li ul li a {
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+/*--Fin bottom--*/
+
+/*--Inicio footer--*/
+
+footer {
+  position: relative;
+  margin: auto;
+  width: 1000px;
+  height: 62px;
+  text-align: center;
+  color: white;
+  line-height: 62px;
+  font-size: 15px;
+  background: black;
+}
